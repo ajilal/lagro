@@ -34,6 +34,44 @@
         width: 50%;
       }
     }
+    .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 6em;
+  margin: auto;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #71bf44;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 18em;
+    width: 10em;
+  }
+  .card{
+    padding: 30px;
+    margin: 30px;
+  }
+}
 </style>
 </head>
 <body>
@@ -46,18 +84,117 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#">About Us</a>
-                <a class="nav-item nav-link" href="#">Our Products</a>
+                <a class="nav-item nav-link" href="#carouselExampleControls">Our Products</a>
                 <a class="nav-item nav-link" href="#">Gallery</a>
-                <a class="nav-item nav-link" href="#">Contacts</a>
+                <a class="nav-item nav-link" href="#contact">Contacts</a>
             </div>
         </div>
     </nav>
     <img src="images/banner.jpg" style="width:100%">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+          <div class="card">
+            <img src="images/led.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card  d-md-block">
+            <img src="images/led.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card  d-md-block">
+            <img src="images/led.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 4</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card  d-md-block">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 5</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card  d-md-block">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 6</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 7</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card  d-md-block">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 8</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card  d-md-block">
+              <img src="images/led.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title 9</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="products">
+
+    </div>
     <!-- <div class="row" style="height: 600px;background-image: url('images/banner.jpg');background-size: auto;background-repeat: no-repeat;">
 
     </div> -->
     <!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-image: linear-gradient(to right,rgb(1, 103, 154),rgb(109, 187, 71));">
+<footer id="contact" class="page-footer font-small mdb-color lighten-3 pt-4" style="background-image: linear-gradient(to right,rgb(1, 103, 154),rgb(109, 187, 71));">
 
     <!-- Footer Links -->
     <div class="text-center text-md-left">
