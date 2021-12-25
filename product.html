@@ -84,6 +84,37 @@
   border-bottom-right-radius: 28px;
 border-bottom-left-radius: 28px;
 }
+.p-product-name {
+  font-size:14px;
+  color:blue;
+}
+.btn-order{
+  background: #1d82aa;
+  color: white;
+  float: right;
+}
+#id_div_products img{
+  width: 150px;
+  height: 280px;
+  margin: auto;
+  display: block;
+}
+#id_div_products .product{
+  border-radius: 12px;
+  padding: 5px;
+  background: #8080800a;
+  margin:5px;
+  display:inline-block;
+  width:24% ;
+}
+@media only screen and (max-width: 600px) {
+  .product {
+    width:100% !important;
+  }
+}
+.og-price{
+  text-decoration: line-through;
+}
 </style>
 </head>
 <body>
@@ -95,68 +126,49 @@ border-bottom-left-radius: 28px;
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="about.html">About Us</a>
-                <a class="nav-item nav-link" href="product.html">Our Products</a>
+                <a class="nav-item nav-link" href="about.html">About Us</a>
+                <a class="nav-item nav-link active" href="products.html">Our Products</a>
                 <a class="nav-item nav-link" href="#">Gallery</a>
                 <a class="nav-item nav-link" href="#contact">Contacts</a>
             </div>
         </div>
     </nav>
-    <img src="images/about-bg.png" class="about-bg" style="width:100%">
-    <div id="id_div_about">
-        <div class="row" style="padding:4%">
-            <div class="col-md-12">
-                <h3>About Lagro</h3>
-                <p>Lagro offers you the most sustainable LED lights to light up your world. As a leading provider of LED
-                    lights in the market, we envision creating a positive change in the world we live in with our endurable
-                    lighting solutions. Thus, we have come up with innovative lighting solutions to reduce your energy bills.
-                    Lagro&#39;s high-quality energy-efficient LED bulbs will help you save up to 90% energy consumption. Our
-                    extensive range of LED lights is suitable for residential, retail and commercial, and industrial usage.</p>
+    <img src="images/products.png"  style="width:100%">
+    <div id="id_div_products">
+        <div class="row" style="padding: 0% 13% 13%;">
+            <div class="product" >
+                <img src="images/LED.jpg">
+                <p class="p-product-name">LagroSmartLight,9WLED</h3>
+                <p></p>
+                <span class="og-price">1000 INR</span>
+                <span>800 INR</span>
+                <span class="btn btn-order">Order Now</span>
             </div>
-            <div class="col-md-7 mt-2">
-                <h3>The Foundation</h3>
-                <p>LAGRO ELECTRICALS INDIA PVT LTD is a LED lights manufacturing company based in Kerala, India. At its
-                    heart, Lagro aims to provide its customers with eco-friendly, cost-efficient, and superior-quality LED
-                    lighting products. Innovation is the prime base of Lagro&#39;s operations. Lagro uses cutting-edge technology
-                    for production and the bulbs are of consistent quality. Lagro is manufacturing the next-gen LED lights
-                    that meet international standards. Our history, experience, and manufacturing of LEDs ensure to deliver
-                    top-quality LED lights that stand out from the rest. All the products of Lagro undergo rigorous testing
-                    before it leaves the factory.</p>
+            <div class="product">
+              <img src="images/LED.jpg">
+              <p class="p-product-name">LagroSmartLight,9WLED</h3>
+                <p></p>
+                <span class="og-price">1000 INR</span>
+                <span>800 INR</span>
+                <span class="btn btn-order">Order Now</span>
             </div>
-            <div class="col-md-5 mt-2 about-img">
+            <div class="product">
+              <img src="images/LED.jpg">
+              <p class="p-product-name">LagroSmartLight,9WLED</h3>
+                <p></p>
+                <span class="og-price">1000 INR</span>
+                <span>800 INR</span>
+                <span class="btn btn-order">Order Now</span>
             </div>
-            <div class="col-md-5 mt-2 about-img">
+            <div class="product">
+              <img src="images/LED.jpg">
+              <p class="p-product-name">LagroSmartLight,9WLED</h3>
+                <p></p>
+                <span class="og-price"> 1000 INR</span>
+                <span>800 INR</span>
+                <span class="btn btn-order">Order Now</span>
             </div>
-            <div class="col-md-7 mt-2">
-                <h3>The electric age</h3>
-                <p>The Electrical revolution has transformed the lives of people. It has improvised their life and made them
-                    much easier. Every year the electrical industry is experiencing a surge in growth and the electrical
-                    products flooding in the market. Moreover, Electric cars and bikes are taking over the world. Lagro
-                    understands the power of electricity and its contribution to creating a cleaner planet. This is what
-                    inspired the people at Lagro to choose the electrical industry for their business.</p>
-            </div>
-            <div class="col-md-7 mt-2">
-                <h3>Lagro smart-life</h3>
-                <p>As a technology-driven company, Largo provides an extraordinary experience with our smart lighting
-                    products. We understand the role of lighting in people’s life and its effect on the environment. Thus, we
-                    take innovative measures to deliver an amazing lighting experience to our customers and to preserve
-                    nature by manufacturing environment-friendly LED bulbs by making use of the rapidly advancing
-                    technology. Our LED bulbs are carefully designed to reduce the energy consumption and carbon
-                    footprints of the users. It can also be your perfect choice for a smart and happy home. Discover our
-                    range of smart lighting products and experience the luxury of smart lighting.</p>
-            </div>
-            <div class="col-md-5 mt-2 about-img">
-            </div>
-            <div class="col-md-5 mt-2 about-img">
-            </div>
-            <div class="col-md-7 mt-2">
-                <h3>Our Mission</h3>
-                <p>Light is the life of Lagro. So, we are continually striving to be a leading manufacturer of energy-efficient
-                    LED lights that meet customers’ expectations in innovation and cost-effectiveness.</p>
-                <h3>Our Vision</h3>
-                <p>To be positioned as the provider of best LED lights in the global market by delivering products that
-                    match the international standards to our customers and improve the quality of their life.</p>
-            </div>
+            
         </div>
     </div>
     <!-- <div class="row" style="height: 600px;background-image: url('images/banner.jpg');background-size: auto;background-repeat: no-repeat;">
